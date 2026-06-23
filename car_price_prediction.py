@@ -18,7 +18,7 @@ def main():
 
     st.markdown("This app will help you to predict your car selling price")
 
-    st.markdown("This Project is Devloped by Aman Shukla")
+    st.markdown("This Project is Devloped by 'Aman Shukla' ")
 
     p1 = st.number_input("Please enter ex-showroom price (In Lakhs)", 2.5,25.0,step=1.0)
 
