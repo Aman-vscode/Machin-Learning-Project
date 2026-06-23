@@ -10,6 +10,9 @@ def main():
     html_temp = """
         <h1>Car Price Prediction</h1>
     """
+    DevName = """ 
+            <h3> This Project is Devloped by <u style= "text-decoration-color: red; text-decoration-thickness: 3px"> Aman Shukla </u> </h3>
+    """
 
     model = xgb.XGBRegressor()
     model.load_model("xgb_model.json")
@@ -18,7 +21,7 @@ def main():
 
     st.markdown("This app will help you to predict your car selling price")
 
-    st.markdown("This Project is Devloped by 'Aman Shukla' ")
+    st.markdown(DevName, unsafe_allow_html=True)
 
     p1 = st.number_input("Please enter ex-showroom price (In Lakhs)", 2.5,25.0,step=1.0)
 
